@@ -2,10 +2,16 @@
 library(hexSticker)
 library(magick)
 library(magrittr)
+library(showtext)
+
+font_add_google("Open Sans")
+## Automatically use showtext to render text
+showtext_auto()
 
 hexSticker::sticker("man/figures/scroller_logo.svg",
                     package = "scroller",
                     p_color = "black", 
+                    p_family = "Open Sans",
                     p_size = 7.5,
                     p_y = 0.6, 
                     s_x = 1, 
@@ -15,8 +21,6 @@ hexSticker::sticker("man/figures/scroller_logo.svg",
                     h_color = "black",
                     h_fill = "white",
                     filename="man/figures/logo_large.png")
-
-# MOD with Gimp: removing red borders.
 
 scroller <- magick::image_read("man/figures/logo_large.png")
 magick::image_scale(scroller, "130") %>%
