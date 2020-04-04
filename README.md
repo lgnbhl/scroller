@@ -8,7 +8,7 @@ status](https://gitlab.com/lgnbhl/scroller/badges/master/pipeline.svg)](https://
 
 # scroller <img src="man/figures/logo.png" align="right" />
 
-> Scroll effect to any object in your Shiny apps
+> Scroll to any object in your Shiny apps
 
 The package `scroller` allows to scroll to any element on the page in
 Shiny thanks to [Arbitrary anchor
