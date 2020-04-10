@@ -38,27 +38,25 @@ library(shiny)
 library(ggplot2)
 library(scroller)
 
-ui <- function(){
-  fluidPage(
-    align = "center",
-    scroller::use_scroller(), # add use_scroller() in the UI
-    h1("Shiny with scroller"),
-    a("Direct to plot", type = "button", class = "btn btn-info", href = "#plot"), #plot
-    a("Scroll to plot", type = "button", class = "btn btn-danger", href = "##plot"), ##plot
-    HTML(rep("<br/><br/><br/>&darr;<br/>", 10)),
-    plotOutput("plot"),
-    a("Scroll to top", type = "button", class = "btn btn-danger", href = "#.btn") #.btn
-  )
-}
-
-server <- function(input, output, session){
-  output$plot <- renderPlot({
-    ggplot(mpg, aes(displ, hwy, colour = class)) + 
-      geom_point()
-  })
-}
-
-shinyApp(ui, server)
+shinyApp(
+  ui = fluidPage(
+      align = "center",
+      scroller::use_scroller(), # add use_scroller() in the UI
+      h1("Shiny with scroller"),
+      a("Direct to plot", type = "button", class = "btn btn-info", href = "#plot"), #plot
+      a("Scroll to plot", type = "button", class = "btn btn-danger", href = "##plot"), ##plot
+      HTML(rep("<br/><br/><br/>&darr;<br/>", 10)),
+      plotOutput("plot"),
+      a("Scroll to top", type = "button", class = "btn btn-danger", href = "#.btn") #.btn
+    ),
+  
+  server = function(input, output, session){
+    output$plot <- renderPlot({
+      ggplot(mpg, aes(displ, hwy, colour = class)) + 
+        geom_point()
+    })
+  }
+)
 ```
 
 ### Customize it
