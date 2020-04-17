@@ -30,20 +30,20 @@ html_dependencies_scroller <- function() {
       version = "1.0",
       package = "anchor",
       src = c(
-        file = "jquery.arbitrary-anchor.js-1.0",
+        file = "",
         url = ""
       ),
-    script = "jquery.arbitrary-anchor.js"
+    script = "jquery.arbitrary-anchor.js-1.0/jquery.arbitrary-anchor.js"
     ),
     htmltools::htmlDependency(
       name = "jquery.easing",
       version = "1.4.1",
       package = "anchor",
       src = c(
-        file = "jquery.easing-1.4.1",
+        file = "",
         url = ""
       ),
-      script = "jquery.easing.min.js"
+      script = "jquery.easing-1.4.1/jquery.easing.min.js"
     )
   )
 }
