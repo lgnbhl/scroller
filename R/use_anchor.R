@@ -26,7 +26,7 @@ use_scroller <- function(animationLength = 750, easingFunction = 'linear', scrol
 html_dependencies_scroller <- function() {
   list(
     htmltools::htmlDependency(
-      name = "jquery.arbitrary-anchor.js",
+      name = "jquery.arbitrary-anchor",
       version = "1.0",
       package = "anchor",
       src = c(
