@@ -1,10 +1,15 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+<!-- badges: start -->
+
 [![CRAN
 status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.org/package=aniview)
 [![pipeline
 status](https://gitlab.com/lgnbhl/scroller/badges/master/pipeline.svg)](https://gitlab.com/lgnbhl/scroller/pipelines)
+[![R build
+status](https://github.com/lgnbhl/scroller/workflows/R-CMD-check/badge.svg)](https://github.com/lgnbhl/scroller/actions)
+<!-- badges: end -->
 
 # scroller <img src="man/figures/logo.png" align="right" />
 
