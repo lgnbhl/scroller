@@ -28,22 +28,22 @@ html_dependencies_scroller <- function() {
     htmltools::htmlDependency(
       name = "jquery.arbitrary-anchor",
       version = "1.0",
-      package = "anchor",
+      package = "scroller",
       src = c(
         file = "",
         url = ""
       ),
-    script = "jquery.arbitrary-anchor.js-1.0/jquery.arbitrary-anchor.js"
+    script = "htmlwidgets/jquery.arbitrary-anchor.js-1.0/jquery.arbitrary-anchor.js"
     ),
     htmltools::htmlDependency(
       name = "jquery.easing",
       version = "1.4.1",
-      package = "anchor",
+      package = "scroller",
       src = c(
         file = "",
         url = ""
       ),
-      script = "jquery.easing-1.4.1/jquery.easing.min.js"
+      script = "htmlwidgets/jquery.easing-1.4.1/jquery.easing.min.js"
     )
   )
 }
