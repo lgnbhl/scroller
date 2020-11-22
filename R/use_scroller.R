@@ -14,7 +14,7 @@
 #' @export
 use_scroller <- function(animationLength = 750, easingFunction = "linear", scrollOffset = 0){
 
-  options <- paste0("AA_CONFIG = {animationLength: ", animationLength,", easingFunction: ", easingFunction,", scrollOffset:", scrollOffset,"};")
+  options <- paste0("AA_CONFIG = {animationLength: ", animationLength,", easingFunction: '", easingFunction,"', scrollOffset:", scrollOffset,"};")
   class(options) <- "json"
   
   tagList(
