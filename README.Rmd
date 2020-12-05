@@ -34,18 +34,25 @@ Then you can add a CSS selector after the hash (#) and it will automatically be 
 ```{r shiny, eval = FALSE}
 library(shiny)
 library(ggplot2)
+library(magrittr)
 library(scroller)
 
 shinyApp(
   ui = fluidPage(
       align = "center",
-      scroller::use_scroller(easingFunction = "easeOutBounce", animationLength = 2000), # add use_scroller() in the UI
+      scroller::use_scroller(animationLength = 2000), # add use_scroller() in the UI
       h1("Shiny with scroller"),
-      a("Direct to plot", type = "button", class = "btn btn-info", href = "#plot"), #plot
-      a("Scroll to plot", type = "button", class = "btn btn-danger", href = "##plot"), ##plot
+      shiny::actionButton(inputId = NULL, label = "Scroll to plot", class = "btn-success") %>%
+        shiny::a() %>%
+        shiny::tagAppendAttributes(href = "##plot"), # add scroller id CSS 
+      shiny::actionButton(inputId = NULL, label = "No scroll to plot", class = "btn-primary") %>%
+        shiny::a() %>%
+        shiny::tagAppendAttributes(href = "#plot"), # add id CSS 
       HTML(rep("<br/><br/><br/>&darr;<br/>", 20)),
       plotOutput("plot"),
-      a("Scroll to top", type = "button", class = "btn btn-danger", href = "#.btn") #.btn
+      shiny::actionButton(inputId = NULL, label = "Scroll to top", class = "btn-success") %>%
+            shiny::a() %>%
+            shiny::tagAppendAttributes(href = "#.btn") # add scroller class reference
     ),
   
   server = function(input, output, session){
