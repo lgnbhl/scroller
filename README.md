@@ -40,8 +40,8 @@ element, the first element found will be scrolled to. More information
 
 ``` r
 library(shiny)
-library(ggplot2)
-library(magrittr)
+library(tidyverse)
+library(ggrepel)
 library(scroller)
 
 shinyApp(
@@ -64,8 +64,10 @@ shinyApp(
   
   server = function(input, output, session){
     output$plot <- renderPlot({
-      ggplot(mpg, aes(displ, hwy, colour = class)) + 
-        geom_point()
+      ggplot(starwars, aes(mass, height)) + 
+        geom_point(aes(color = gender)) +
+        geom_label_repel(aes(label = name), size = 3) +
+        labs(title = "Star Wars Characters Body Mass Index")
     })
   }
 )
