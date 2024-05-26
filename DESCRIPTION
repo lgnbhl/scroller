@@ -15,5 +15,5 @@ RoxygenNote: 7.1.1
 Imports: 
     jsonlite,
     htmltools
-URL: https://felixluginbuhl.com/scroller, https://github.com/lgnbhl/scroller
+URL: https://felixluginbuhl.com/scroller/, https://github.com/lgnbhl/scroller/
 BugReports: https://github.com/lgnbhl/scroller/issues

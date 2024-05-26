@@ -1,7 +1,7 @@
 #' Use Scroller
 #'
 #' @param animationLength integrer. Lenght of the animation
-#' @param easingFunction string. An effect from \href{http://gsgd.co.uk/sandbox/jquery/easing/}{jquery-easing}.
+#' @param easingFunction string. An effect from \href{https://gsgd.co.uk/sandbox/jquery/easing/}{jquery-easing}.
 #' @param scrollOffset integrer. scrollOffset
 #' @param use_cdn use CDN (by default) or use locally stored files.
 #' 
