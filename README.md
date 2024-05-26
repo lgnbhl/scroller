@@ -3,7 +3,7 @@
 <!-- badges: start -->
 
 [![CRAN
-status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.org/package=aniview)
+status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.org/package=scroller)
 [![R-CMD-check](https://github.com/lgnbhl/scroller/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lgnbhl/scroller/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 

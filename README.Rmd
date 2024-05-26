@@ -5,7 +5,7 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 <!-- badges: start -->
-[![CRAN status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.org/package=aniview)
+[![CRAN status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.org/package=scroller)
 [![R-CMD-check](https://github.com/lgnbhl/scroller/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lgnbhl/scroller/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
