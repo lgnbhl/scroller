@@ -1,7 +1,12 @@
+url: https://felixluginbuhl.com/scroller
 template:
-  params:
-    bootswatch: cosmo
-    ganalytics: UA-158089797-1
+  bootstrap: 5
+  bootswatch: litera
+  ganalytics: UA-158089797-1
+
+authors:
+  Felix Luginbuhl:
+    href: "https://felixluginbuhl.com"
 
 navbar:
   left:
@@ -9,6 +14,8 @@ navbar:
     href: index.html
   - text: Reference
     href: reference/index.html
+  - text: News
+    href: news/index.html
   right:
    - icon: fa-linkedin
      href: https://www.linkedin.com/in/felixluginbuhl
@@ -23,3 +30,4 @@ reference:
   - title: "Functions"
     contents: 
       - use_scroller
+      - html_dependencies_scroller
