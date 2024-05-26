@@ -1,23 +1,18 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-
 <!-- badges: start -->
 
 [![CRAN
 status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.org/package=aniview)
-[![pipeline
-status](https://gitlab.com/lgnbhl/scroller/badges/master/pipeline.svg)](https://gitlab.com/lgnbhl/scroller/pipelines)
-[![R build
-status](https://github.com/lgnbhl/scroller/workflows/R-CMD-check/badge.svg)](https://github.com/lgnbhl/scroller/actions)
+[![R-CMD-check](https://github.com/lgnbhl/scroller/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/lgnbhl/scroller/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-# scroller <img src="man/figures/logo.png" align="right" />
+# scroller <img src="man/figures/logo.png" align="right" height="138" />
 
 > Scroll to any object in your Shiny apps
 
-The package `scroller` allows to scroll to any element on the page in
-Shiny thanks to [Arbitrary anchor
-JS](http://arbitrary-anchor.briangonzalez.org/).
+**scroller** allows to scroll to any element on the page in Shiny thanks
+to [Arbitrary anchor JS](http://arbitrary-anchor.briangonzalez.org/).
 
 ## Installation
 
@@ -33,7 +28,7 @@ remotes::install_github("lgnbhl/scroller")
 In order to use scroller, you must first call `use_scroller()` in the
 apps’ UI.
 
-Then you can add a CSS selector after the hash (\#) and it will
+Then you can add a CSS selector after the hash (#) and it will
 automatically be scrolled to. If the selector returns more than 1
 element, the first element found will be scrolled to. More information
 [here](https://github.com/briangonzalez/jquery.arbitrary-anchor.js#usage).
