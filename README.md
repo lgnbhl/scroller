@@ -13,7 +13,7 @@ status](https://www.r-pkg.org/badges/version/scroller)](https://CRAN.R-project.o
 > Scroll to any object in your Shiny apps
 
 **scroller** allows to scroll to any element on the page in Shiny thanks
-to [Arbitrary anchor JS](http://arbitrary-anchor.briangonzalez.org/).
+to [Arbitrary anchor JS](https://gsgd.co.uk/sandbox/jquery/easing/).
 
 ## Installation
 
@@ -72,7 +72,7 @@ shinyApp(
 ### Customize it
 
 You can change the animation lenght, the easing function (see
-[jquery-easing](http://gsgd.co.uk/sandbox/jquery/easing/) for all
+[jquery-easing](https://gsgd.co.uk/sandbox/jquery/easing/) for all
 options availables) and the scroll off set.
 
 ``` r

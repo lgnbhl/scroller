@@ -14,7 +14,7 @@ use_scroller(
 \arguments{
 \item{animationLength}{integrer. Lenght of the animation}
 
-\item{easingFunction}{string. An effect from \href{http://gsgd.co.uk/sandbox/jquery/easing/}{jquery-easing}.}
+\item{easingFunction}{string. An effect from \href{https://github.com/gdsmith/jquery.easing/}{jquery-easing}.}
 
 \item{scrollOffset}{integrer. scrollOffset}
 
